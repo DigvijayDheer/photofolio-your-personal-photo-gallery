@@ -1,0 +1,30 @@
+.custom_card_styles {
+  border: 0.3rem solid #ddd;
+  cursor: pointer;
+}
+
+.custom_card_header {
+  height: 8rem;
+  position: relative;
+}
+
+.album_cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+}
+
+.custom_card_body {
+  background-color: #ddd;
+}
+
+.custom_card_styles:hover {
+  border: 0.3rem solid #0077ff;
+}
+
+.custom_card_styles:hover .custom_card_body {
+  background-color: #0077ff;
+  color: #fff;
+}
