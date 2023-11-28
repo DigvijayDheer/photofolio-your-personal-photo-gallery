@@ -1,0 +1,29 @@
+.formContainer {
+  background-color: #f4f4f4;
+  border-radius: 2rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+  max-width: 60rem;
+  margin: auto;
+  padding: 0.3rem 2rem 2rem 2rem;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  background-color: #fff;
+  outline: none;
+  border-radius: 3rem;
+  color: #0077ff;
+  font-weight: 700;
+  padding: 0.6rem 1.4rem; /* Adjusted padding */
+  font-size: 1.2rem;
+  border: 0.2rem solid #fff;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  border: 0.2rem solid #0077ff;
+}
