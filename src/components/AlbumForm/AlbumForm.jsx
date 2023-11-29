@@ -5,7 +5,7 @@ import { Row, Col } from "react-bootstrap";
 
 function AlbumForm() {
   return (
-    <div className={`mt-5 ${Styles.formContainer}`}>
+    <div className={`mb-5 ${Styles.formContainer}`}>
       <form>
         <h4 className="m-3 text-center">Create an Album</h4>
         <div className={Styles.inputContainer}>

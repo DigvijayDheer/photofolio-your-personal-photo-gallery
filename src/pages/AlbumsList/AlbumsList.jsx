@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./albumsList.module.css";
-import AlbumCard from "../AlbumCard/AlbumCard";
+import AlbumCard from "../../components/AlbumCard/AlbumCard";
 import { Col, Row } from "react-bootstrap";
-import Button from "../Button/Button";
-import AlbumForm from "../AlbumForm/AlbumForm";
+import Button from "../../components/Button/Button";
+import AlbumForm from "../../components/AlbumForm/AlbumForm";
 
 function AlbumsList() {
   const [showAlbumForm, setShowAlbumForm] = useState(false);
@@ -14,7 +14,6 @@ function AlbumsList() {
 
   return (
     <>
-      {showAlbumForm && <AlbumForm />}
       <div className={styles.custom_row}>
         <h4>Your Albums</h4>
         <Button
@@ -24,6 +23,7 @@ function AlbumsList() {
           {showAlbumForm ? "Cancel" : "Add Album"}
         </Button>
       </div>
+      {showAlbumForm && <AlbumForm />}
       <div>
         <Row xs={1} sm={2} md={4} lg={5} className="g-3">
           {Array.from({ length: 10 }).map((_, idx) => (

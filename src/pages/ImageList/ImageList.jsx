@@ -1,22 +1,28 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./imageList.module.css";
-import Button from "../Button/Button";
+import Button from "../../components/Button/Button";
 import { Col, Image, Row } from "react-bootstrap";
 import BackIcon from "../../images/back.png";
 import DummyImage from "../../images/dummy.png";
-import ImageForm from "../ImageForm/ImageForm";
+import ImageForm from "../../components/ImageForm/ImageForm";
 
 function ImageList() {
   const [showImageForm, setShowImageForm] = useState(false);
+  const navigate = useNavigate();
 
   const imageFormToggler = () => {
     setShowImageForm(!showImageForm);
   };
 
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       <div className="my-3 text-center pt-3 d-md-flex justify-content-md-between">
-        <button className={styles.backButton}>
+        <button className={styles.backButton} onClick={goBack}>
           <Image src={BackIcon} />
         </button>
         <h4 className="mb-3 mb-md-0">
