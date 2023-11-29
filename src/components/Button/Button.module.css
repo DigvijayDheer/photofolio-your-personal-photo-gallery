@@ -6,12 +6,22 @@
   font-weight: 500;
   font-size: large;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out; /* Add transition property */
+}
+
+.button:active {
+  transform: translateY(0.2rem); /* Move slightly down when clicked */
 }
 
 .primary_danger {
   border: 0.17rem solid #ff1300;
   background-color: #ff1300;
   color: #fff;
+}
+
+.primary_danger:hover {
+  border: 0.17rem solid #f31000;
+  background-color: #f31000;
 }
 
 .secondary_danger {
@@ -24,6 +34,11 @@
   border: 0.17rem solid #0077ff;
   background-color: #0077ff;
   color: #fff;
+}
+
+.primary_success:hover {
+  border: 0.17rem solid #0a72e9;
+  background-color: #0a72e9;
 }
 
 .secondary_success {

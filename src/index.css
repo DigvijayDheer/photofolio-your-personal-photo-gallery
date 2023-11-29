@@ -6,3 +6,7 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
 }
+
+h4 {
+  font-weight: 700 !important;
+}

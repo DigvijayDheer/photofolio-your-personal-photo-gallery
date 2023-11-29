@@ -13,7 +13,7 @@ function AlbumForm() {
             <Col xs={12} md={8} lg={9} className="mb-3 mb-md-0">
               <input
                 type="text"
-                id="albumName"
+                id="albumId"
                 name="albumName"
                 placeholder="Album Name"
                 className={Styles.input}

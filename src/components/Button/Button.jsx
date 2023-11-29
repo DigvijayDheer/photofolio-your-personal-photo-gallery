@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Styles from "./Button.module.css";
 
-function Button({ children, type }) {
+function Button({ children, type, onClick }) {
   let buttonType;
 
   if (type === "primary_danger") {
@@ -16,7 +16,9 @@ function Button({ children, type }) {
   }
 
   return (
-    <button className={`${Styles.button} ${buttonType}`}>{children}</button>
+    <button className={`${Styles.button} ${buttonType}`} onClick={onClick}>
+      {children}
+    </button>
   );
 }
 
